@@ -10,7 +10,6 @@ const Form = ({ status, message, onValidated }) => {
     return email && email.indexOf("@") > -1 && onValidated({ EMAIL });
   }
 
-
   return (
     <div id="mailchimp-form">
       <div className="form-field">
