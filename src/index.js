@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'; // routi
 import { PageDataProvider } from './app-data'; // global state
 import './styles/index.scss'; // styles
 import About from './pages/About';
+import Credits from './pages/Credits';
 import Landing from './pages/Landing';
 
 /* site router */
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
   {
     path: "/about",
     element: <About />
+  },
+  {
+    path: "/credits",
+    element: <Credits />
   },
 ]);
 

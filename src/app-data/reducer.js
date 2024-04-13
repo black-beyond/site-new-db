@@ -29,7 +29,6 @@ export const initialState = {
 export const stateReducer = (state, action) => {
   switch (action.type) {
     case 'load-site-markdown':
-      console.log(action.data);
       return {
         ...state,
         about: {
@@ -37,6 +36,15 @@ export const stateReducer = (state, action) => {
           copyBrief: action.data.find(({id}) => id === "about_brief").content,
         }
       }
+    case 'load-site-navigation':
+      return {
+        ...state,
+        siteNavigation: action.data
+      }
+    case 'load-site-credits':
+      const roles = [...new Set(action.data.map(({role}) => role))];
+      const credits = roles.map(role => ({title: role, people: action.data.filter(dp => dp.role === role)}));
+      return {...state, credits }
 
     case "set-navigation":
       return {

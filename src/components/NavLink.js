@@ -8,13 +8,13 @@ function NavLink({ data }) {
         data.URL && data.URL[0] === "/" ?
           <Link
             to={data.URL}
-            className={data.Highlighted ? "highlight" : "nav-link"}
+            className={data.Highlighted === "TRUE" ? "highlight" : "nav-link"}
           >
             {data.LinkName}
           </Link> :
           <a
             href={data.URL}
-            className={data.Highlighted ? "highlight" : "nav-link"}
+            className={data.Highlighted === "TRUE" ? "highlight" : "nav-link"}
             target="__blank"
           >
             {data.LinkName}

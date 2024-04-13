@@ -33,7 +33,7 @@ function Header() {
           {
             nav &&
             nav
-              .filter(item => item.MobileNav && !item.Highlighted)
+              .filter(item => item.MobileNav === "TRUE" && item.Highlighted === "FALSE")
               .map(data =>
                 <NavLink key={data.LinkName} data={data} />
               )
@@ -42,7 +42,7 @@ function Header() {
             {
               nav &&
               nav
-                .filter(item => item.MobileNav && item.Highlighted)
+                .filter(item => item.MobileNav === "TRUE" && item.Highlighted === "TRUE")
                 .map(data =>
                   <NavLink key={data.LinkName} data={data} />
                 )
@@ -54,7 +54,7 @@ function Header() {
             {
               nav &&
               nav
-                .filter(item => item.DesktopNav && item.DesktopPosition === "Left")
+                .filter(item => item.DesktopNav === "TRUE" && item.DesktopPosition === "Left")
                 .map(data => <NavLink key={data.LinkName} data={data} />)
             }
           </section>
@@ -62,7 +62,7 @@ function Header() {
             {
               nav &&
               nav
-                .filter(item => item.DesktopNav && item.DesktopPosition === "Right")
+                .filter(item => item.DesktopNav === "TRUE" && item.DesktopPosition === "Right")
                 .map(data => <NavLink key={data.LinkName} data={data} />)
             }
           </section>

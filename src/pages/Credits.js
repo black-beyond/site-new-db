@@ -1,6 +1,5 @@
 import React, { useEffect, useContext } from 'react'
 import { PageData } from '../app-data'
-import ReactMarkdown from "react-markdown";
 
 /*** COMPONENTS ***/
 import Footer from '../components/Footer'
@@ -20,9 +19,9 @@ function Credits() {
         {
           state.credits.length > 0 && state.credits.map((block) => {
             return (
-              <div key={block.id} className="role-block">
-                <h4>{block.fields.Role}</h4>
-                <ReactMarkdown source={block.fields.People} linkTarget={"_blank"} />
+              <div key={block.title} className="role-block">
+                <h4>{block.title}</h4>
+                {block.people.map(({name, website}) => (<p><a href={website} target="_blank" rel="noopener noreferrer">{name}</a></p>))}
               </div>
             )
           })

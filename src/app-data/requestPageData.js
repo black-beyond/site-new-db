@@ -19,7 +19,7 @@ function parseCSV(csv) {
   const fields = lines.shift();
   return lines.map(line => {
     const data = {};
-    line.forEach((val, i) => { dp[fields[i]] = val });
+    line.forEach((val, i) => { data[fields[i]] = val });
     return data;
   });
 }

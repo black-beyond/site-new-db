@@ -15,8 +15,8 @@ function Footer({ gradient = false }) {
         {
           nav &&
           nav
-            .filter(item => item.FooterNav)
-            .map(item => ({...item, Highlighted: false}))
+            .filter(item => item.FooterNav === "TRUE")
+            .map(item => ({...item, Highlighted: "FALSE"}))
             .map(data =>
               <NavLink key={data.LinkName} data={data} />
             )
