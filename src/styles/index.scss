@@ -1,0 +1,76 @@
+/******************/
+/*** INDEX.SCSS ***/
+/******************/
+//All SCSS files connect here, and this file connects to index.js
+
+/** UTILS **/
+@import './utils/Normalize';
+@import './utils/Variables';
+@import "./utils/Fonts";
+
+/** DESIGN SYSTEMS / MIXINS **/
+@import './mixins/Buttons';
+@import './mixins/Gradients';
+@import './mixins/Redaction';
+@import './mixins/Typography';
+
+/** BASE STYLES **/
+@import "./BaseStyles";
+
+/** COMPONENTS **/
+//Pages
+@import './pages/Landing'; //also includes styles for #landing-hero
+@import './pages/LandingPromo';
+@import './pages/LandingLivestream';
+@import './pages/Credits';
+@import './pages/About';
+@import './pages/MediaKit';
+@import './pages/Archive';
+@import './pages/ArchiveItem';
+
+//Header/Site Navigation
+@import './components/Header';
+//Shop
+@import './components/ShopPopup';
+
+//Landing Hero Visuals
+@import './components/IntroGraphic';
+@import './components/VideoBackground';
+
+//Livestream Hero Content
+@import './components/LivestreamHero'; //also includes grid/layout styles for #livestream-video, #twitter-chat, #paypal-donation-button
+@import './components/LivestreamVideo';
+@import './components/LivestreamDonateButton';
+@import './components/StreamChat';
+// @import './components/PaypalDonationButton';
+
+//Landing + Livestream Additional Content
+@import './components/Subscribe';
+@import './components/EventRSVP';
+@import './components/EventDetails';
+@import './components/MailchimpForm';
+@import './components/AboutBrief';
+@import './components/Schedule'; //also includes styles for .schedule-event
+
+//Landing Archive
+@import './components/LandingArchive';
+//Slick Carousel Code
+//
+//@import './components/Carousel';
+@import "~slick-carousel/slick/slick.css"; 
+@import "~slick-carousel/slick/slick-theme.css";
+//Below variables are necessary in order for slider to work
+$slick-font-path: "~slick-carousel/slick/fonts/";
+$slick-loader-path: "~slick-carousel/slick/";
+//https://stackoverflow.com/questions/48779212/react-slick-import-css-from-slick-carousel-fails
+
+
+//Arrow Buttons
+@import './components/DownButton';
+@import './components/BackButton';
+
+//Footer
+@import './components/Footer';
+
+
+

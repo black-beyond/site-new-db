@@ -1,0 +1,52 @@
+footer {
+  background: $dark;
+  display: grid;
+
+  nav {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+
+    a {
+      @include footer($light);
+      display: block;
+      text-decoration: none;
+      width: auto;
+      margin-bottom: 2rem;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+#subscribe footer {
+  background: none;
+}
+
+@media (min-width: $tablet) {
+  footer {
+    justify-items: right;
+
+    nav {
+      width: 100%;
+      margin-right: 60px;
+      flex-direction: row;
+      justify-content: flex-end;
+
+      a {
+        margin-bottom: 0;
+        margin-left: 1.5rem;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  footer nav a {
+    margin-left: 2rem;
+  }
+}
+
+// @media

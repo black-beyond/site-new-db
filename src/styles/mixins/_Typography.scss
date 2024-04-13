@@ -1,0 +1,71 @@
+/*** TYPE SYSTEM MIXINS ***/
+//We can use mixins to streamline type styles for different kinds of headers, and then just use the include keyword to add them in wherever in the project.
+//Also adding a color argument to each of these mixins so that we can adjust their colors as needed.
+
+@mixin logotype($color: $dark) {
+  font-family: "Ofform";
+  font-size: 6.25rem;
+  line-height: 0.72px;
+  letter-spacing: 0.01em;
+  color: $color;
+}
+
+@mixin logotype-small($color: $dark) {
+  font-family: "Ofform";
+  font-size: 3.25rem;
+  line-height: 0.72px;
+  letter-spacing: 0.01em;
+  color: $color;
+}
+
+@mixin h1($color: $light) {
+  @include Redaction(50);
+  font-size: 2rem;
+  line-height: 1.2;
+  color: $color;
+  font-weight: normal;
+}
+
+@mixin h2($color: $light) {
+  font-family: "Parabole";
+  text-transform: uppercase;
+  font-size: 2.25rem;
+  letter-spacing: 0.08em;
+}
+
+@mixin h3($color: $light) {
+  @include Redaction(50, normal, italic);
+  font-size: 1.75rem;
+  color: $color;
+}
+
+@mixin p($color: $light) {
+  font-family: "Syne";
+  font-size: 1.1875rem;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  font-weight: normal;
+  color: $color;
+}
+
+@mixin p-small($color: $light) {
+  font-family: "Syne";
+  font-size: 1rem;
+  line-height: 118%;
+  letter-spacing: 0.04em;
+  color: $color;
+}
+
+@mixin footer($color: $light) {
+  font-family: "Compagnon";
+  font-size: 0.9375rem;
+  letter-spacing: 0.08em;
+  color: $color;
+}
+
+@mixin button-text($color: $accent) {
+  color: $color;
+  font-family: "Parabole";
+  font-size: 1.325rem;
+  letter-spacing: 1.5px;
+}

@@ -1,0 +1,63 @@
+#event-rsvp {
+  background: $dark;
+  color: $light;
+  padding: 5.75rem 2rem;
+  display: none;
+  @include gradient-bg;
+
+  h1 {
+    margin: 0;
+    max-width: 400px;
+
+    &:nth-child(2) {
+      color: $accent;
+      font-style: italic;
+    }
+  }
+
+  a {
+    @include call-to-action;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    margin-top: 3.125rem;
+  }
+}
+
+#event-rsvp.in-hero {
+  display: block;
+  background: none;
+  color: $light;
+  position: absolute;
+  bottom: 3.75rem;
+  left: 3.75rem;
+  width: calc(100% - 7.5rem);
+  padding: 0;
+}
+
+@media (min-width: $mobile-horizontal) {
+  #event-rsvp {
+    display: block;
+
+    h1 {
+      text-align: center;
+      max-width: none;
+    }
+
+    a {
+      margin: 3.125rem auto 0;
+    }
+  }
+
+  #event-rsvp.in-hero {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop) {
+  #event-rsvp {
+    padding: 7rem 6.25rem 5.75rem;
+  }
+}

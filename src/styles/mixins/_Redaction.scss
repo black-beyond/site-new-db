@@ -1,0 +1,54 @@
+/***********************************************/
+/*** MIXIN FOR USING THE REDACTION TYPEFACE ***/
+/**********************************************/
+
+/*** Why? ***/
+//the header typeface we're using, Redaction (https://www.redaction.us/), has quite a bit of variety to it, with 7 different glyph sets, each coming with bold, italic and bold-italic options. So I wrote a little mixin to compartmentalize all that configuration and expose it to the rest of the project with a single line of code to be included wherever we want to set the typeface.
+
+/*** How does it work? ***/
+//Whichever text element you want to include the Redaction font in, target it in any other SCSS file (the file for the component where the text lives is recommended) and use the @include keyword to apply the Redaction font onto it:
+
+//Example:
+// h1 {
+//    @include Redaction;
+//}
+
+//The @include keyword will be replaced with the contents of the mixin written below during runtime. The above example will produce an element with the font family "Redaction", at a normal font weight, with no italics.
+
+//You can also add arguments to the mixin to customize the degradation, embolden or italicize the text. The Redaction mixin takes in 3 arguments, which can be added in a parenthesis just like you would in JavaScript.
+//The first argument is degradation rate. The seven options are: 0, 10, 20, 35, 50, 70, 100. The default is 0.
+//The second argument is font weight, with two options: bold and normal. The default is normal.
+//The third argument is font-style, with two options: italic and normal. The default is normal.
+
+//Example
+// h1 {
+//    @include Redaction(30, bold, italic);
+//      --> produces the typeface at 30 degradation, with bold and italics
+//
+//    @include Redaction(70, normal, italic); 
+//      --> gotta add an argument for font-weight even if the text is not going to be bold
+//
+//    @include Redaction(20, bold); 
+//      --> no need to include the italic argument if it's not italic
+//
+//    @include Redaction(50); 
+//      --> no need to include either font-weight or font-style as arguments if unused
+//
+//}
+
+//Happy coding!
+
+@mixin Redaction($level: 0, $font-weight: normal, $font-style: normal) {
+
+  @if $level == 0 { font-family: "Redaction", serif; }
+  @else if $level == 10 { font-family: "Redaction 10", serif; }
+  @else if $level == 20 { font-family: "Redaction 20", serif; }
+  @else if $level == 35 { font-family: "Redaction 35", serif; }
+  @else if $level == 50 { font-family: "Redaction 50", serif; }
+  @else if $level == 70 { font-family: "Redaction 70", serif; }
+  @else if $level == 100 { font-family: "Redaction 100", serif; }
+  @else { font-family: "Redaction", serif }
+
+  font-weight: $font-weight;
+  font-style: $font-style;
+}

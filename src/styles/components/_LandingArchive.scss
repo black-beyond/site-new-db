@@ -1,0 +1,163 @@
+//LandingArchive
+#landing-archive {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,1) 100%);
+  .archive-title {
+    color: $accent;
+  }
+
+  .archive-see-more {
+    margin: 1.5rem auto;
+  }
+}
+
+//also contains styles for LandingArchiveItem
+//reduced nesting amount since classes are pretty unique
+.landing-archive-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.landing-archive-item {
+  width: 100%;
+}
+
+.landing-archive-item-top {
+  cursor: pointer;
+  margin: 0 2.5rem;
+  display: grid;
+  padding: 0 1rem;
+  grid-template-columns: 40px 1fr 1fr 40px;
+  justify-items: center;
+  border-bottom: 1px solid $light;
+
+  @media (max-width: $tablet) {
+    padding: 0 0.25rem;
+    margin: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .archive-arrow {
+    height: 24px;
+    justify-self: right;
+
+    @media (max-width: $tablet) {
+      //height: 1rem;
+      display: none;
+    }
+  }
+
+  > * {
+    margin: 10px 0; //used to be 10px 0
+    @media (max-width: $tablet) {
+      @include p-small;
+    }
+  }
+
+  .landing-archive-title {
+    text-decoration: underline;
+  }
+  .landing-archive-title, .landing-archive-location {
+    @media (min-width: $tablet) {
+      min-width: 280px;
+    }
+  }
+  .landing-archive-date {
+    color: $accent;
+  }
+}
+
+.landing-archive-item-drawer {
+  display: none;
+
+  .archive-item-grid {
+    padding: 2.5rem;
+
+    @media (min-width: $tablet) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 3rem;
+      grid-template-areas: "text img";
+    }
+    @media (max-width: $tablet) {
+      padding: 1rem;
+    }
+  }
+
+  .landing-archive-text {
+    grid-area: text;
+    @media (min-width: $tablet) {
+      margin-top: 0;
+    }
+  }
+
+  .landing-archive-bg {
+    grid-area: img;
+    padding: 8px;
+    //border: 2px solid $light;
+    height: calc((100vw - 5rem) * 0.5625); 
+
+    @media (min-width: $tablet) {
+      height: calc((50vw - 5.5rem) * 0.5625);
+    }
+    .landing-archive-img {
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+
+
+// .landing-archive-img {
+
+//   // padding: 1rem;
+
+//   @media (min-width: $tablet) {
+//     // grid-column: 2;
+//   }
+// }
+
+/*** DRAWER OPEN STYLES ***/
+.landing-archive-item.open {
+  .archive-arrow {
+    transform: rotate(90deg);
+  }
+
+  .landing-archive-item-drawer {
+    display: block;
+  }
+}
+
+.landing-archive-btn {
+  display: block;
+  border-bottom: 1.5px solid white;
+  margin: 0 40px;
+  .archive-btn {
+    margin: 24px auto;
+    text-decoration: none;
+  }
+  @media (max-width: $tablet) {
+    margin: 1rem;
+  }
+}
+
+.archive-btn {
+  @include call-to-action;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  text-decoration: none;
+}

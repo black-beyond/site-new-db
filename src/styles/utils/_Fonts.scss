@@ -1,0 +1,270 @@
+/*-----FONT IMPORTS-----*/
+
+/**** SYNE ****/
+@font-face {
+  font-family: "Syne";
+  src: url("../../assets/fonts/Syne-Regular.woff2") format("woff2"),
+    url("../../assets/fonts/Syne-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/**** PARABOLE ****/
+@font-face {
+  font-family: "Parabole";
+  src: url("../../assets/fonts/ParaboleTrial-Regular.woff2") format("woff2"),
+    url("../../assets/fonts/ParaboleTrial-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/**** OFFORM ****/
+@font-face {
+  font-family: "Ofform";
+  src: url("../../assets/fonts/OfformTRIAL-Regular.woff2") format("woff2"),
+    url("../../assets/fonts/OfformTRIAL-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/**** COMPAGNON ****/
+@font-face {
+  font-family: "Compagnon";
+  src: url("../../assets/fonts/Compagnon-Medium.woff2") format("woff2"),
+    url("../../assets/fonts/Compagnon-Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/******REDACTION REGULAR******/
+@font-face {
+  font-family: "Redaction";
+  src: url("../../assets/fonts/Redaction-Regular.woff2") format("woff2"),
+    url("../../assets/fonts/Redaction-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Redaction 10";
+  src: url("../../assets/fonts/Redaction_10-Regular.woff2") format("woff2"),
+    url("../../assets/fonts/Redaction_10-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Redaction 20";
+  src: url("../../assets/fonts/Redaction_20-Regular.woff2") format("woff2"),
+    url("../../assets/fonts/Redaction_20-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Redaction 35";
+  src: url("../../assets/fonts/Redaction_35-Regular.woff2") format("woff2"),
+    url("../../assets/fonts/Redaction_35-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Redaction 50";
+  src: url("../../assets/fonts/Redaction_50-Regular.woff2") format("woff2"),
+    url("../../assets/fonts/Redaction_50-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Redaction 70";
+  src: url("../../assets/fonts/Redaction_70-Regular.woff2") format("woff2"),
+    url("../../assets/fonts/Redaction_70-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Redaction 100";
+  src: url("../../assets/fonts/Redaction_100-Regular.woff2") format("woff2"),
+    url("../../assets/fonts/Redaction_100-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/******REDACTION ITALIC******/
+@font-face {
+  font-family: "Redaction";
+  src: url("../../assets/fonts/Redaction-Italic.woff2") format("woff2"),
+    url("../../assets/fonts/Redaction-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Redaction 10";
+  src: url("../../assets/fonts/Redaction_10-Italic.woff2") format("woff2"),
+    url("../../assets/fonts/Redaction_10-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Redaction 20";
+  src: url("../../assets/fonts/Redaction_20-Italic.woff2") format("woff2"),
+    url("../../assets/fonts/Redaction_20-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Redaction 35";
+  src: url("../../assets/fonts/Redaction_35-Italic.woff2") format("woff2"),
+    url("../../assets/fonts/Redaction_35-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Redaction 50";
+  src: url("../../assets/fonts/Redaction_50-Italic.woff2") format("woff2"),
+    url("../../assets/fonts/Redaction_50-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Redaction 70";
+  src: url("../../assets/fonts/Redaction_70-Italic.woff2") format("woff2"),
+    url("../../assets/fonts/Redaction_70-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Redaction 100";
+  src: url("../../assets/fonts/Redaction_100-Italic.woff2") format("woff2"),
+    url("../../assets/fonts/Redaction_100-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+/******REDACTION BOLD******/
+@font-face {
+  font-family: "Redaction";
+  src: url("../../assets/fonts/Redaction-Bold.woff2") format("woff2"),
+    url("../../assets/fonts/Redaction-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Redaction 10";
+  src: url("../../assets/fonts/Redaction_10-Bold.woff2") format("woff2"),
+    url("../../assets/fonts/Redaction_10-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Redaction 20";
+  src: url("../../assets/fonts/Redaction_20-Bold.woff2") format("woff2"),
+    url("../../assets/fonts/Redaction_20-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Redaction 35";
+  src: url("../../assets/fonts/Redaction_35-Bold.woff2") format("woff2"),
+    url("../../assets/fonts/Redaction_35-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Redaction 50";
+  src: url("../../assets/fonts/Redaction_50-Bold.woff2") format("woff2"),
+    url("../../assets/fonts/Redaction_50-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Redaction 70";
+  src: url("../../assets/fonts/Redaction_70-Bold.woff2") format("woff2"),
+    url("../../assets/fonts/Redaction_70-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Redaction 100";
+  src: url("../../assets/fonts/Redaction_100-Bold.woff2") format("woff2"),
+    url("../../assets/fonts/Redaction_100-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/*-----FONT CLASSES-----*/
+.redaction-0 {
+  font-family: "Redaction";
+}
+
+.redaction-10 {
+  font-family: "Redaction 10";
+}
+.redaction-20 {
+  font-family: "Redaction 20";
+}
+.redaction-35 {
+  font-family: "Redaction 35";
+}
+.redaction-50 {
+  font-family: "Redaction 50";
+}
+.redaction-70 {
+  font-family: "Redaction 70";
+}
+.redaction-100 {
+  font-family: "Redaction 100";
+}
+.redaction-0-italic {
+  font-family: "Redaction Italic";
+}
+.redaction-10-italic {
+  font-family: "Redaction Italic 10";
+}
+.redaction-20-italic {
+  font-family: "Redaction Italic 20";
+}
+.redaction-35-italic {
+  font-family: "Redaction Italic 35";
+}
+.redaction-50-italic {
+  font-family: "Redaction Italic 50";
+}
+.redaction-70-italic {
+  font-family: "Redaction Italic 70";
+}
+.redaction-100-italic {
+  font-family: "Redaction Italic 100";
+}
+
+.redaction-0- {
+  font-family: "Redaction Bold";
+}
+.redaction-10- {
+  font-family: "Redaction 10";
+}
+.redaction-20- {
+  font-family: "Redaction 20";
+}
+.redaction-35- {
+  font-family: "Redaction 35";
+}
+.redaction-50- {
+  font-family: "Redaction 50";
+}
+.redaction-70- {
+  font-family: "Redaction 70";
+}
+.redaction-100- {
+  font-family: "Redaction 100";
+}
+
+/*-----TYPE SIZE CLASSES-----*/
+.text-large {
+  font-size: 5rem;
+}
+
+.text-medium {
+  font-size: 3rem;
+}
+
+.text-small {
+  font-size: 1.2rem;
+}

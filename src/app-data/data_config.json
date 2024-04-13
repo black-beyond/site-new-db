@@ -1,0 +1,9 @@
+{
+  "spreadsheetID": "2PACX-1vQIRM31qI34S2J_0YD5DIb96PZ2-XpKG_XQh3-XnHHKhH5fbtwLrmXEg55uvs0Rwc9IEJDrFuuadxq5",
+  "dataTabs": [
+    {"name": "Site Controls", "id": "0", "action": "load-site-config"},
+    {"name": "Site Navigation", "id": "567545246", "action": "load-site-navigation"},
+    {"name": "Site Markdown", "id": "1027474702", "action": "load-site-markdown"},
+    {"name": "Collaborators", "id": "676192345", "action": "load-site-credits"}
+  ]
+}

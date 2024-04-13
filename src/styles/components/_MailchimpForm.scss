@@ -1,0 +1,58 @@
+#mailchimp-form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.form-field {
+  width: 100%;
+  max-width: 25rem;
+  margin-right: 3.75rem;
+  margin-bottom: 1.25rem;
+
+  input {
+    @include p;
+    display: block;
+    width: 100%;
+    background: none;
+    border: none;
+    border-bottom: 1px solid $light;
+    color: $light;
+    padding-bottom: 0.5rem;
+    outline: none;
+
+    &::placeholder {
+      color: $accent;
+    }
+  }
+
+  label {
+    display: block;
+    margin-top: 0.375rem;
+  }
+}
+
+#submit {
+  @include call-to-action;
+}
+
+#message {
+  position: absolute;
+  height: 3rem;
+  bottom: -3rem;
+
+  &.error {
+    color: red;
+  }
+
+  &.success {
+    color: green;
+  }
+}
+
+@media (min-width: $mobile-horizontal) {
+  #mailchimp-form {
+    flex-direction: row;
+    width: 100%;
+  }
+}

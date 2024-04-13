@@ -1,0 +1,48 @@
+#credits {
+  background: $dark;
+  color: $light;
+  display: grid;
+  grid-template-rows: 40px 1fr auto;
+  min-height: calc(100vh - 3.75rem);
+  padding: 1.875rem;
+
+  h4 {
+    @include p($accent);
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    @include p($light);
+    margin: 0;
+
+    a {
+      text-decoration: underline rgba(155, 179, 179, 0.8);
+      transition: transform 0.25s;
+
+      &:hover {
+        display: inline-block;
+        transform: skewX(15deg);
+      }
+    }
+  }
+
+  nav {
+    margin: 0;
+  }
+
+  & > div {
+    padding-top: 6rem;
+    max-width: 600px;
+    margin-bottom: 8rem;
+  }
+}
+.role-block {
+  margin-bottom: 2.5rem;
+}
+
+@media (min-width: $tablet) {
+  #credits {
+    min-height: calc(100vh - 7.5rem);
+    padding: 3.75rem;
+  }
+}

@@ -1,0 +1,56 @@
+/* ALSO INCLUDES LANDING HERO */
+
+#landing {
+  width: 100%;
+}
+
+#landing-hero {
+  height: calc(100vh - 3.75rem);
+  padding: 1.875rem;
+  position: relative;
+
+  & > p {
+    display: none;
+    margin: 0;
+    text-align: right;
+  }
+}
+
+#corner-logo {
+  display: block;
+  width: 80%;
+  margin: 3rem auto 0;
+}
+
+#corner-logo.livestream {
+  max-width: 260px;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: $mobile-horizontal) {
+
+  #corner-logo {
+    display: none;
+  }
+
+  #corner-logo.livestream {
+    display: block;
+    margin: 3.5rem auto;
+  }
+
+  #landing-hero {
+    padding: 3.75rem;
+    height: calc(100vh - 7.5rem);
+
+    p {
+      display: block;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+
+  #corner-logo.livestream {
+    margin-top: 0;
+  }
+}

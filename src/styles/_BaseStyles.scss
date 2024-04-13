@@ -1,0 +1,63 @@
+body {
+  background: $dark;
+  color: $light;
+  font-family: sans-serif;
+  text-rendering: geometricPrecision;
+}
+
+h1 {
+  @include h1;
+}
+
+h2 {
+  @include h2;
+  margin: 0;
+}
+
+h3 {
+  @include h3;
+  font-weight: 400;
+}
+
+h4 {
+  @include p($accent);
+  margin: 0 0 0.5rem;
+}
+
+p {
+  @include p;
+  font-weight: 400;
+}
+
+.p-small {
+  @include p-small;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  // user-drag: none;
+}
+
+ul {
+  margin: 0;
+}
+
+li {
+  @include p;
+  margin-bottom: 0.875rem;
+  padding-left: 24px;
+  list-style-image: url('../assets/li-icon.svg');
+}
+
+@media (min-width: $mobile-horizontal) {
+  h1 {
+    font-size: 2.25rem;
+  }
+}

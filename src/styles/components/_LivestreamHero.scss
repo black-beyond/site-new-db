@@ -1,0 +1,74 @@
+#livestream-hero {
+  min-height: 190vh;
+
+  .logo {
+    margin: 2rem 0 2.5rem;
+  }
+}
+
+#livestream-grid {
+  width: 100%;
+  display: grid;
+  grid-template-areas:
+    "livestream"
+    "title"
+    "sidebar"
+    "donate-text";
+}
+
+#livestream-video {
+  grid-area: livestream;
+}
+
+#livestream-sidebar {
+  grid-area: sidebar;
+}
+
+#donate-text {
+  grid-area: donate-text;
+  margin: 4rem auto 2rem;
+
+  @media (min-width: $desktop) {
+    margin: -1rem auto;
+  }
+}
+
+#livestream-title {
+  margin: 1rem 2rem 2rem;
+  grid-area: title;
+  align-self: center;
+  color: $accent;
+}
+
+@media (min-width: $desktop) {
+  #livestream-hero {
+    min-height: 0;
+    padding: 3rem 3.75rem;
+
+    .logo {
+      margin: 0;
+      margin-bottom: 2.25rem;
+    }
+  }
+
+  #livestream-grid {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 1fr 0.3fr;
+    grid-template-rows: auto 60px;
+    grid-template-areas:
+      "livestream sidebar"
+      "title donate-text";
+    grid-gap: 2rem;
+  }
+
+  #livestream-title {
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-wide) {
+  #livestream-grid {
+    grid-gap: 2.5rem;
+  }
+}

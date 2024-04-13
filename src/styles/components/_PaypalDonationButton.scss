@@ -1,0 +1,120 @@
+#paypal-donation-button {
+  width: 100%;
+  max-width: 450px;
+  margin: 3.75rem auto 0;
+}
+
+// #donate-text {
+//   width: 90%;
+//   text-align: center;
+//   margin: -1rem auto 4rem;
+// }
+
+#donate-button {
+  display: block;
+  background-image: url(../../assets/donate.svg);
+  background-size: auto 1rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  margin: 0 auto;
+  // background: none;
+  border: 1px solid $accent;
+  height: 3.0625rem;
+  cursor: pointer;
+  outline: none;
+
+  input {
+    display: block;
+    max-width: 90px;
+    height: 3.0625rem;
+    margin: 0 auto;
+  }
+
+  &:hover {
+    background: url(../../assets/donate.svg),
+      linear-gradient(250deg, #2e1b4c, #1a3e3a);
+    background-repeat: no-repeat;
+    background-position: center;
+    // background-image: url(../../assets/donate.svg);
+    color: $light;
+    box-shadow: 1px 1px 10px #c6fff49e;
+  }
+}
+
+/*** CSS FOR THE DONATE LINK ON THE FOOTER ***/
+
+#paypal-donation-button.footer-link {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  max-width: 61px;
+  margin: 0 0 2rem;
+  position: relative;
+
+
+  &:hover p {
+    text-decoration: underline;
+  }
+
+  p {
+    @include footer($light);
+    position: absolute;
+    top: -3px;
+    right: 0;
+    margin: 0;
+    z-index: 0;
+  }
+}
+
+#donate-button.footer-link {
+  opacity: 0;
+  position: sticky;
+  width: 61px;
+  height: 17px;
+  z-index: 1;
+  background: none;
+  border: none;
+  background: red;
+}
+
+@media (min-width: $tablet) {
+  #paypal-donation-button.link {
+    margin-left: 2rem;
+  }
+}
+
+@media (min-width: $desktop) {
+  #paypal-donation-button {
+    margin: 0;
+  }
+
+  #donate-button {
+    margin: 0;
+  }
+
+  #donate-text {
+    width: 100%;
+    margin-top: -1rem;
+  }
+}
+
+@media (min-width: $desktop-wide) {
+  #donate-text {
+    margin-top: -1.25rem;
+  }
+}
+
+/*** CSS FOR THE DONATE LINK ON THE HEADER ***/
+#paypal-donation-button.header-link {
+  width: 90px;
+  margin: 0;
+  margin-right: 1.25rem;
+  // display: inline;
+}
+
+#donate-button.header-link {
+  // background-size: auto 0.8rem;
+  height: 2.25rem;
+  
+}

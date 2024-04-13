@@ -1,0 +1,24 @@
+@mixin gradient-bg {
+  background-image: linear-gradient(250deg, #292954, #000, #354447);
+  background-size: 200% 200%;
+  -webkit-animation: gradientBg 20s ease infinite;
+  -moz-animation: gradientBg 20s ease infinite;
+  animation: gradientBg 20s ease infinite;
+}
+
+@-webkit-keyframes gradientBg {
+  0%{background-position:0% 96%}
+  50%{background-position:100% 5%}
+  100%{background-position:0% 96%}
+}
+@-moz-keyframes gradientBg {
+  0%{background-position:0% 96%}
+  50%{background-position:100% 5%}
+  100%{background-position:0% 96%}
+}
+
+@keyframes gradientBg {
+  0%{background-position:0% 96%}
+  50%{background-position:100% 5%}
+  100%{background-position:0% 96%}
+}

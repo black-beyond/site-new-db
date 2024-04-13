@@ -1,0 +1,39 @@
+@mixin call-to-action($color: $accent) {
+  @include button-text($color);
+  padding-top: 2px;
+  display: block;
+  width: 100%;
+  max-width: 9.75rem;
+  height: 3rem;
+  background: none;
+  border: 1px solid $color;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  transition: all 0.25s;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    display: block;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: linear-gradient(250deg, #2e1b4c, #1a3e3a);
+    opacity: 0;
+    transition: opacity 0.25s;
+  }
+
+  &:hover {
+    color: $light;
+    box-shadow: 1px 1px 10px #c6fff49e;
+
+    &::before {
+      opacity: 1;
+    }
+  }
+}

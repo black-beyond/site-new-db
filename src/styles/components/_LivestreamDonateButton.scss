@@ -1,0 +1,63 @@
+#donate-button {
+  @include call-to-action;
+  max-width: none;
+  margin-top: 1.5rem;
+}
+
+#donate-popup {
+  position: fixed;
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.6);
+  align-items: center;
+  justify-items: center;
+
+  &.open {
+    display: grid;
+  }
+}
+
+#donate-popup-modal {
+  width: 100%;
+  max-width: 400px;
+  min-height: 240px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  position: relative;
+  @include gradient-bg;
+  // border: 2px solid #fff;
+
+  h3 {
+    text-align: center;
+  }
+
+  a {
+    @include call-to-action;
+    margin-top: 1rem;
+    max-width: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+#popup-close-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: none;
+  background-image: url('../../assets/menu-close.svg');
+  background-position: center;
+  background-size: 80%;
+  background-repeat: no-repeat;
+}

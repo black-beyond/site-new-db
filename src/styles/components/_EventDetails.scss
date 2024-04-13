@@ -1,0 +1,32 @@
+#event-details {
+  background: $dark;
+  padding: 3.75rem 2rem;
+  display: grid;
+
+  p {
+    margin-bottom: 1.75rem;
+  }
+
+  h4 {
+    margin-bottom: 0.75rem;
+  }
+}
+
+#event-content {
+  max-width: 500px;
+  align-self: center;
+}
+
+@media (min-width: $desktop) {
+  #event-details {
+    padding: 8.75rem 6.25rem;
+    grid-template-columns: 500px 1fr;
+    grid-gap: 0 50px;
+  }
+}
+
+@media (min-width: $desktop-wide) {
+  #event-details {
+    grid-gap: 0 120px;
+  }
+}

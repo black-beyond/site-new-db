@@ -1,0 +1,42 @@
+#about {
+  background: $dark;
+  color: $light;
+  display: grid;
+  grid-template-rows: 40px 1fr auto;
+  min-height: calc(100vh - 3.75rem);
+  padding: 1.875rem;
+
+  h4:nth-of-type(2) {
+    margin-top: 4rem;
+  }
+
+
+
+  .about-link {
+    @include p($light);
+    display: block;
+    text-decoration: underline rgba(155, 179, 179, 0.8);
+    transition: transform 0.25s;
+    // text-decoration: none;
+
+    &:hover {
+      transform: skewX(15deg);
+    }
+  }
+  nav {
+    margin: 0;
+  }
+
+  & > div {
+    padding-top: 6rem;
+    max-width: 600px;
+    margin-bottom: 8rem;
+  }
+}
+
+@media (min-width: $tablet) {
+  #about {
+    min-height: calc(100vh - 7.5rem);
+    padding: 3.75rem;
+  }
+}

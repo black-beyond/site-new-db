@@ -1,0 +1,49 @@
+#subscribe {
+  background: $dark;
+  color: $light;
+  display: none;
+  @include gradient-bg;
+
+  > div {
+    padding: 5.75rem 2rem;
+  }
+  h1 {
+    margin-bottom: 2.25rem;
+  }
+}
+
+#subscribe.in-hero {
+  display: block;
+  background: none;
+  color: $light;
+  position: absolute;
+  bottom: 3.75rem;
+  left: 3.75rem;
+  width: calc(100% - 7.5rem);
+
+  > div {
+    padding: 0;
+  }
+}
+
+#subscribe.in-livestream {
+  display: block;
+}
+
+@media (min-width: $mobile-horizontal) {
+  #subscribe {
+    display: block;
+  }
+
+  #subscribe.in-hero {
+    display: none;
+  }
+}
+
+
+@media (min-width: $desktop) {
+  #subscribe > div {
+    padding: 7rem 6.25rem 5.75rem; 
+  }
+}
+

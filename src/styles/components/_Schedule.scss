@@ -1,0 +1,41 @@
+#schedule {
+  padding: 3.25rem 1.875rem;
+  background: $dark;
+
+  h3 {
+    margin: 4rem 0 1.5rem;
+  }
+
+  & > p {
+    color: $accent;
+  }
+}
+
+.schedule-event {
+  margin-bottom: 2.5rem;
+
+  p {
+    margin: 0;
+  }
+}
+
+@media (min-width: $tablet) {
+  #schedule {
+    padding: 4rem 3.75rem 5rem;
+  }
+}
+
+.schedule-event {
+  display: grid;
+  grid-template-columns: 6rem auto;
+  grid-gap: 0 2.3rem;
+  margin-bottom: 1.7rem;
+
+  p {
+    line-height: 135%;
+  }
+
+  .title {
+    max-width: 33rem;
+  }
+}
